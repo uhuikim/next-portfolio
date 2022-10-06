@@ -1,6 +1,5 @@
 import Head from "next/head";
-import Animation from "../components/home/Animation";
-import Info from "../components/home/info";
+import Info from "../components/home/Info";
 import Layout from "../components/Layout";
 
 export default function Home() {
