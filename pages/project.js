@@ -27,7 +27,7 @@ export default function project({ projects }) {
     );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
     const options = {
         method: "POST",
         headers: { Authorization: `Bearer ${TOKEN}`, accept: "application/json", "Notion-Version": "2022-06-28", "content-type": "application/json" },

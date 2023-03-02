@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 const Footer = () => {
+    const year = new Date().getFullYear();
     return (
         <footer className="text-gray-600 body-font">
             <div className="bg-gray-100">
@@ -12,7 +13,7 @@ const Footer = () => {
                         </a>
                     </Link>
                     <p className="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">
-                        © 2020 Tailblocks —
+                        © {year} Tailblocks —
                         <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" className="text-gray-600 ml-1" target="_blank">
                             @knyttneve
                         </a>
