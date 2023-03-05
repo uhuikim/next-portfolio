@@ -19,8 +19,8 @@ const ProjectItem = ({ data }) => {
     const end = WorkPeriod.date?.end;
 
     const calculatedPeriod = (start, end) => {
-        const startDateStringArray = start.split("-");
-        const endDateStringArray = end.split("-");
+        const startDateStringArray = start?.split("-");
+        const endDateStringArray = end?.split("-");
 
         var startDate = new Date(startDateStringArray[0], startDateStringArray[1], startDateStringArray[2]);
         var endDate = new Date(endDateStringArray[0], endDateStringArray[1], endDateStringArray[2]);
